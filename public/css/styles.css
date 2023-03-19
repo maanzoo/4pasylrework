@@ -1,0 +1,390 @@
+/****************************************************************NAVBAR***************************************************/
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.text {
+  margin-right: 20rem;
+  font-family: "Taviraj", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: azure;
+}
+.logo {
+  padding-left: 15rem;
+}
+
+.navbar-toggler {
+  margin-right: 3rem;
+}
+.text-white {
+  color: white;
+}
+
+/****************************************************************KARHANAMYZ BARADA***************************************************/
+.karhana {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+.yazly {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.yazlytext {
+  margin-top: 1rem;
+  font-family: "Taviraj", sans-serif;
+  font-style: italic;
+}
+.yazly-yazi {
+  overflow: auto; /* float temizlemek icin */
+  background-color: #112d4e;
+  padding: 6rem 0 1rem 0;
+  text-align: center;
+}
+.yazly-yazi img {
+  border-radius: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.yazly-yazi p {
+  font-family: "Taviraj", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding: 0 20rem;
+}
+.yazly-yazi h3 {
+  font-family: "Taviraj", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+/****************************************************************HYZMATLARYMYZ-TEXT********************************************************************/
+.hyzmatlarymyz,
+.karhana,
+.galereya,
+.partners {
+  width: 100%;
+  height: 10rem;
+  background-color: #f9f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Taviraj", sans-serif;
+  font-weight: 700;
+}
+/****************************************************************HYZMATYLARYMYZ********************************************************************/
+.grid-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 3rem 15rem 0 15rem;
+  background-color: #112d4e;
+}
+
+.grid-item {
+  position: relative;
+  /*flex-basis: calc(50% - 10px);*/
+  flex: 1 0 50%;
+  height: 30rem;
+  width: 30rem;
+  margin-bottom: 5rem;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+.grid-img:hover {
+  transform: scale(1.01);
+}
+.grid-item:hover .grid-item2 {
+  transform: scale(1.01);
+  border-top: 5px solid #f7c04a; /* add a red top border on hover */
+}
+.grid-item:hover .grid-item2 h3 {
+  color: #f7c04a;
+}
+.grid-item2 {
+  position: absolute; /* set child div position to absolute */
+  top: 20rem; /* set the distance from the top of the parent div */
+  left: 3.3rem; /* set the distance from the left of the parent div */
+  width: 85%;
+  height: 11rem;
+  background-color: #f9f7f7;
+  transition: transform 0.5s ease-in-out;
+  transition: border-top 0.3s ease; /* add transition to make the border appear smoothly */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add a black shadow */
+}
+.grid-item2 h3 {
+  margin-top: 1rem;
+  padding: 0 6rem;
+  text-align: center;
+  font-family: "Taviraj", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  transition: 0.3 ease;
+}
+
+.grid-item2 p {
+  margin-top: 1rem;
+  font-family: "Taviraj", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  padding: 0 2rem;
+}
+/****************************************************************GALEREYA********************************************************************/
+.galereya-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #112d4e;
+  padding: 3rem 10rem 3rem 10rem;
+}
+.galereya-item {
+  /*flex-basis: calc(33.33% - 10px);
+   adjust width based on your desired spacing */
+  flex: 1 1 33%;
+  width: 35rem;
+  height: 30rem;
+  margin: 2rem;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.galereya-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+/****************************************************************PARTNERS********************************************************************/
+.partners {
+  overflow: hidden;
+  padding: 2rem 5rem;
+}
+.partner-img {
+  scale: 0.2;
+}
+/****************************************************************FOOTERS********************************************************************/
+
+.footer-distributed {
+  background: #112d4e;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding-left: 30rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Taviraj", sans-serif;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Open Sans", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+    padding: 2rem 0;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+/****************************************************************MOBILE ADJUSTMENTS***************************************************/
+
+@media screen and (max-width: 767px) {
+  /* küçük ekranlar için ayarlama */
+  .yazly-yazi {
+    text-align: center;
+  }
+  .yazly-yazi img {
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+  }
+  .yazly-yazi p,
+  h3 {
+    text-align: left;
+    display: block;
+    max-width: 75%;
+    margin: auto;
+    padding: 0;
+  }
+  .yazly {
+    margin-top: 2rem;
+  }
+  .grid-container {
+    padding: 0;
+  }
+  .grid-item {
+    flex-basis: 100%;
+    flex: 1 0 100%;
+  }
+  .grid-item2 {
+    height: 12rem;
+  }
+}
