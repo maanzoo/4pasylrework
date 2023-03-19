@@ -394,7 +394,7 @@
     align-items: center;
   }
   .grid-item2 h3 {
-    padding: 0 1.3rem;
+    padding: 0 0.5rem;
   }
   .galereya-container {
     padding: 0 4rem 0 0;
@@ -409,5 +409,12 @@
 
     background-color: #ccc;
     text-align: center;
+  }
+  .grid-item2 p {
+    margin-top: 0.7rem;
+    font-family: "Taviraj", sans-serif;
+    text-align: center;
+    font-weight: 300;
+    padding: 0 1rem;
   }
 }
