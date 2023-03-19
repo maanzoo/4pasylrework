@@ -23,8 +23,8 @@
 }
 
 /****************************************************************KARHANAMYZ BARADA***************************************************/
-.karhana {
-  padding-top: 10rem;
+.hyzmatlarymyz {
+  padding-top: 7.5rem;
   padding-bottom: 5rem;
 }
 .yazly {
@@ -385,6 +385,29 @@
     flex: 1 0 100%;
   }
   .grid-item2 {
-    height: 12rem;
+    height: 47%;
+  }
+  .logo {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-item2 h3 {
+    padding: 0 1.3rem;
+  }
+  .galereya-container {
+    padding: 0 4rem 0 0;
+    overflow: hidden;
+  }
+  .galereya-item {
+    /*flex-basis: calc(33.33% - 10px);
+     adjust width based on your desired spacing */
+    flex: 1 0 100%;
+    width: 35rem;
+    height: 30rem;
+
+    background-color: #ccc;
+    text-align: center;
   }
 }
