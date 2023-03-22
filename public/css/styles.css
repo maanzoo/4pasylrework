@@ -1,14 +1,30 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 /****************************************************************NAVBAR***************************************************/
+
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 100;
+  background-color: #20262e; /* set initial background to semi-opaque white */
+  transition: background-color 0.9s ease-in-out; /* animate background-color changes */
+}
+
+.navbar.transparent {
+  background-color: rgba(255, 255, 255, 0); /* set transparent background */
+}
+
+.navbar .nav-item a {
+  color: white;
 }
 .text {
   margin-right: 20rem;
-  font-family: "Taviraj", sans-serif;
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 .logo {
   padding-left: 15rem;
@@ -23,15 +39,38 @@
 
 /****************************************************************LANDING************************************************************/
 .img-container {
-  background-image: url("images/greenhouse.png");
-  background-size: cover;
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+.img-container .wallpaper {
+  width: 100%;
+  height: auto;
+}
+.img-container h1 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: right;
+  position: absolute;
+  color: #8fc642;
+  right: 35%;
+  top: 18%;
+  font-size: 6vw;
+  font-weight: 700;
+  margin-right: 10rem;
+  padding-left: 40rem;
+}
+.img-container .fourlogo {
+  position: absolute;
+  height: 25vw;
+  width: 25vw;
+  left: 60%;
+  top: 15%;
 }
 
 /****************************************************************KARHANAMYZ BARADA***************************************************/
 .hyzmatlarymyz {
-  padding-top: 7.5rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
   background-image: url(images/background.png);
   background-repeat: no-repeat;
@@ -50,7 +89,6 @@
 }
 .yazlytext {
   margin-top: 1rem;
-  font-family: "Taviraj", sans-serif;
   font-style: italic;
 }
 .yazly-yazi {
@@ -66,13 +104,11 @@
 }
 
 .yazly-yazi p {
-  font-family: "Taviraj", sans-serif;
   font-size: 1.1rem;
   font-weight: 300;
   padding: 0 20rem;
 }
 .yazly-yazi h3 {
-  font-family: "Taviraj", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
 }
@@ -87,8 +123,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Taviraj", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
+  font-style: italic;
 }
 /****************************************************************HYZMATYLARYMYZ********************************************************************/
 .grid-container {
@@ -116,7 +152,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .grid-img:hover {
   transform: scale(1.01);
@@ -135,7 +171,7 @@
   width: 85%;
   height: 11rem;
   background-color: #f9f7f7;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transition: border-top 0.3s ease; /* add transition to make the border appear smoothly */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add a black shadow */
 }
@@ -143,7 +179,6 @@
   margin-top: 1rem;
   padding: 0 6rem;
   text-align: center;
-  font-family: "Taviraj", sans-serif;
   font-weight: 500;
   font-size: 1.3rem;
   transition: 0.3 ease;
@@ -151,7 +186,6 @@
 
 .grid-item2 p {
   margin-top: 1rem;
-  font-family: "Taviraj", sans-serif;
   text-align: center;
   font-weight: 300;
   padding: 0 2rem;
@@ -174,6 +208,8 @@
   margin: 2rem;
   background-color: #ccc;
   text-align: center;
+  border: solid 3px;
+  border-color: white;
 }
 
 .galereya-img {
@@ -202,7 +238,6 @@
   padding-left: 30rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  font-family: "Taviraj", sans-serif;
 }
 
 .footer-distributed .footer-left,
@@ -431,5 +466,38 @@
     text-align: center;
     font-weight: 300;
     padding: 0 1rem;
+  }
+
+  .img-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .img-container .wallpaper {
+    width: 100%;
+    height: auto;
+  }
+  .img-container h1 {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: right;
+    position: absolute;
+    color: #8fc642;
+    right: 14%;
+    top: 28%;
+    font-size: 4vw;
+    font-weight: 700;
+    margin-right: 10rem;
+    padding-left: 40rem;
+  }
+  .img-container .fourlogo {
+    position: absolute;
+    height: 17vw;
+    width: 17vw;
+    left: 55%;
+    top: 23%;
+  }
+  .logo123 {
+    scale: 0.5;
   }
 }
