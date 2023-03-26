@@ -225,7 +225,7 @@ body {
   padding: 2rem 5rem;
 }
 .partner-img {
-  scale: 0.2;
+  scale: 0.4;
 }
 /****************************************************************FOOTERS********************************************************************/
 
@@ -407,7 +407,7 @@ body {
 }
 /****************************************************************MOBILE ADJUSTMENTS***************************************************/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   /* küçük ekranlar için ayarlama */
   .yazly-yazi {
     text-align: center;
@@ -500,5 +500,8 @@ body {
   }
   .logo123 {
     scale: 0.5;
+  }
+  .partner-img {
+    scale: 0.2;
   }
 }
