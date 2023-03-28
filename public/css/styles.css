@@ -234,6 +234,9 @@ body {
 }
 /****************************************************************FOOTERS********************************************************************/
 
+footer {
+  bottom: 0;
+}
 .footer-distributed {
   background: #112d4e;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -469,7 +472,7 @@ body {
 }
 
 .services-item p {
-  text-align: center;
+  text-align: left;
   margin-top: 2vw;
   color: white;
   font-weight: 200;
@@ -516,10 +519,42 @@ body {
   height: 80vw;
   box-shadow: 0.7vw 0.3vw 10px rgba(0, 0, 0, 0.5);
 }
+/****************************************************************CONTACT US***************************************************/
+.contact-container {
+  margin-top: 15vw;
+}
+.contact-container h1 {
+  text-align: right;
+  float: left;
+  padding-left: 14vw;
+  color: white;
+  font-weight: 700;
+  font-size: 6vw;
+}
 
+.contact-us {
+  margin-left: 3vw;
+  margin-top: 1.5vw;
+}
+
+.contact-us input {
+  width: 15.5vw;
+}
+
+.contact button {
+  width: 10vw;
+  height: 2vw;
+}
 /****************************************************************MOBILE ADJUSTMENTS***************************************************/
 
 @media screen and (max-width: 900px) {
+  body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #112d4e;
+  }
+
   /* küçük ekranlar için ayarlama */
   .yazly-yazi {
     text-align: center;
@@ -546,9 +581,10 @@ body {
   .grid-item {
     flex-basis: 100%;
     flex: 1 0 100%;
+    margin-bottom: 26vw;
   }
   .grid-item2 {
-    height: 47%;
+    height: 54%;
   }
   .logo {
     padding: 0;
@@ -575,7 +611,6 @@ body {
   }
   .grid-item2 p {
     margin-top: 0.7rem;
-    font-family: "Taviraj", sans-serif;
     text-align: center;
     font-weight: 300;
     padding: 0 1rem;
