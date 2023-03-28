@@ -503,6 +503,19 @@ body {
   height: 65vw;
   box-shadow: 0.7vw 0.3vw 10px rgba(0, 0, 0, 0.5);
 }
+.services-containerX {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #081727;
+  width: 58.55vw;
+  margin-left: 20.4vw;
+  margin-top: 4vw;
+  height: 80vw;
+  box-shadow: 0.7vw 0.3vw 10px rgba(0, 0, 0, 0.5);
+}
 
 /****************************************************************MOBILE ADJUSTMENTS***************************************************/
 
@@ -602,5 +615,114 @@ body {
   }
   .partner-img {
     scale: 0.2;
+  }
+
+  #services-h1 {
+    margin-top: 12vw;
+    color: white;
+    font-weight: 900;
+    font-size: 6.62vw;
+    margin-left: 16vw;
+  }
+  #services-navbar {
+    background: none;
+    position: absolute;
+  }
+
+  .services-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #081727;
+    width: 65vw;
+    margin-left: 16vw;
+    height: 330vw;
+    box-shadow: 0.7vw 0.3vw 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .services-item {
+    position: relative;
+    /*flex-basis: calc(50% - 10px);*/
+    flex: 1 0 50%;
+    height: 98%;
+    margin-bottom: 6vw;
+  }
+  .services-img {
+    width: 55vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .services-item h3 {
+    text-align: center;
+    margin-top: 2vw;
+    color: white;
+    font-size: 4vw;
+    font-weight: 700;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .services-item h4 {
+    text-align: center;
+    margin-top: 2vw;
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+    padding: 2vw 6vw;
+    font-size: 3vw;
+    background-color: #09192b;
+  }
+
+  .services-item p {
+    text-align: center;
+    margin-top: 2vw;
+    color: white;
+    font-weight: 200;
+    padding: 0 4vw;
+    font-size: 3vw;
+  }
+
+  .services-container2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #081727;
+    width: 65vw;
+    margin-left: 16vw;
+    height: 250vw;
+    box-shadow: 0.7vw 0.3vw 10px rgba(0, 0, 0, 0.5);
+  }
+  .services-container3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #081727;
+    width: 65vw;
+    margin-left: 16vw;
+    height: 470vw;
+    box-shadow: 0.7vw 0.3vw 10px rgba(0, 0, 0, 0.5);
+  }
+  .services-containerX {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #081727;
+    width: 65vw;
+    margin-left: 16vw;
+    height: 480vw;
+    box-shadow: 0.7vw 0.3vw 10px rgba(0, 0, 0, 0.5);
+    margin-top: 3vw;
   }
 }
